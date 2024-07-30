@@ -1,0 +1,27 @@
+.news-container {
+    position: relative;
+    height: 400px; /* Höjd på container */
+    overflow: hidden;
+}
+
+.news-list {
+    display: flex;
+    text-align: left;
+    list-style: none;
+    flex-direction: column;
+    animation: scroll 150s linear infinite;
+}
+
+.news-list li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-50%);
+    }
+}
