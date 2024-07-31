@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { parseStringPromise } from 'xml2js';
-import './News.css'; // Se till att skapa och importera CSS-filen
+import './News.css';
 
 export default function News() {
     const [articles, setArticles] = useState([]);

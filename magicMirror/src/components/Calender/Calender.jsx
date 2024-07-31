@@ -9,17 +9,13 @@ export default function Calendar() {
             <FullCalendar
                 plugins={[dayGridPlugin, timeGridPlugin, interactionPlugin]}
                 initialView="dayGridMonth"
-                headerToolbar={{
-                    left: 'prev,next today',
-                    center: 'title',
-                    right: 'dayGridMonth,timeGridWeek,timeGridDay'
-                }}
+
                 themeSystem="bootstrap"
                 editable={true}
                 selectable={true}
                 selectMirror={true}
-                dayMaxEvents={true} // allow "more" link when too many events
-                weekends={true} // show weekends
+                dayMaxEvents={true}
+                weekends={true} 
                 events={[
                     { title: 'Meeting', date: '2024-07-30' },
                     { title: 'Lunch', date: '2024-07-31' }

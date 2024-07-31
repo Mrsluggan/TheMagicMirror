@@ -25,7 +25,7 @@ const Todo = () => {
 
     return (
         <div>
-            <h1>Google Tasks</h1>
+            <h1>Att göra lista</h1>
             <GoogleAuth onAuthSuccess={handleAuthSuccess} />
             <ul>
                 {tasks.map(tasklist => (

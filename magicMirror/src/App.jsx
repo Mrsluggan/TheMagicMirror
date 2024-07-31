@@ -7,15 +7,18 @@ import News from './components/News/News'
 import ShoppingList from './components/ShoppingList/ShoppingList'
 import Todo from './components/Todo/Todo'
 import Stocks from './components/Stocks/Stocks'
+import Weather from './components/Weather/Weather'
 
 function App() {
 
   return (
     <>
-      <h1 style={{ maxWidth: "fit-content", marginLeft: "auto", marginRight: "auto" }}>Sluggans Magic Mirror</h1 >
       <div className="parent">
         <div className='rowOne'>
-          <Clock />
+          <div>
+            <Clock />
+            <Weather />
+          </div>
           <Calender />
           <Todo />
         </div>
